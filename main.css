@@ -7,7 +7,7 @@
 body {
   background: #fff;
   color: #333;
-  font-family: "GT America Standard," sans-serif;
+  font-family: "GT America Standard", sans-serif;
   font-size: 1.8rem;
   box-sizing: border-box;
   overflow-x: hidden !important;
@@ -37,7 +37,7 @@ ul {
 
 .help-center {
   padding-top: 4px;
-  font-family: "GT America Standard";
+  /* font-family: "GT America Standard"; */
 }
 
 .help-center:hover {
@@ -165,30 +165,43 @@ input[type="search"]::placeholder {
 
 #main-footer {
   position: relative;
-  height: 20rem;
+  /* height: 25rem; */
   background: #000;
   color: #fff;
   font-size: 1rem;
   line-height: 1.5;
+  padding: 40px 30px 60px;
 }
 
 .footer-container {
-  /* position: relative; */
-  display: flex;
-  gap: 3rem;
-  padding-top: 2rem;
+  position: relative;
+  /* display: flex; */
+  gap: 6rem;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+a.line-break {
+  margin-bottom: 30px !important;
 }
 
-#sub-section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.footer-section {
+  width: 15%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-section h3 {
+  padding-bottom: 1.5rem;
+}
+
+#sub-section ul:last-of-type {
+  margin-bottom: 30px;
 }
 
 .copyright {
   position: absolute;
-  bottom: 30px;
-  right: 300px;
+  bottom: 0;
+  right: 0;
 }
 
 .copyright svg {
@@ -205,7 +218,85 @@ input[type="search"]::placeholder {
   /* filter: hue-rotate(90deg) saturate(2) brightness(1.2); */
 }
 
-@media (max-width: 500px) {
+/* HAMBURGER MENU */
+.hamburger-menu {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.search-icon {
+  display: block;
+  margin: 20px;
+}
+
+.menu-icon {
+  width: 35px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px;
+}
+
+.menu-icon div {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.menu-icon input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+.menu-icon input:checked ~ div:nth-child(2) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menu-icon input:checked ~ div:nth-child(3) {
+  opacity: 0;
+}
+
+.menu-icon input:checked ~ div:nth-child(4) {
+  transform: rotate(-45deg);
+  top: -10px;
+}
+.sub-nav {
+  display: none;
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 0;
+}
+
+/* @media (max-width: 500px) {
+  .hide {
+    display: flex;
+  }
+
+  .menu-icon input:checked .sub-nav {
+    display: block;
+  }
+  .nav-right {
+    display: none;
+  }
+
+  .nav-logo {
+    font-size: 1rem;
+  }
   .grid-container {
     width: 100%;
     padding: 0 1rem;
@@ -225,4 +316,4 @@ input[type="search"]::placeholder {
   #main-footer {
     width: 100% !important;
   }
-}
+} */

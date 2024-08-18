@@ -1,0 +1,50 @@
+.nav-container {
+  margin: 0 10px;
+}
+
+.nav-right {
+  display: none;
+}
+
+.nav-logo {
+  font-size: 1rem;
+}
+.showcase-area h1 {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -4px;
+}
+
+input[type="search"] {
+  width: 90%;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 30px;
+}
+
+.footer-section {
+  width: 35%;
+  margin-bottom: 2rem;
+}
+
+.footer-container {
+  padding-bottom: 50px;
+}
+
+.hide {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .footer-container {
+    padding-bottom: 120px;
+  }
+
+  .copyright {
+    left: 0;
+    bottom: 0;
+  }
+}
